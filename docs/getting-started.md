@@ -2,6 +2,8 @@
 title: Getting Started
 ---
 
+To use just the Loqu library in a new application, do the following:
+
 ## Install
 
 ```sh
@@ -13,6 +15,7 @@ npm install @loqu/core @loqu/react
 ## Write a Semantic Web Component
 
 ```tsx
+// Person.tsx
 import {
   UIContext,
   SemanticComponent,
@@ -79,8 +82,12 @@ export const LinkedPersonPage = linked(PersonPage);
 ## Use a Semantic Web Component
 
 ```tsx
+// App.tsx
+import { Registry, Entrypoint } from "@loqu/loqu-react";
 
-import { Entrypoint } from "@loqu/loqu-react";
+import { PersonPage } from "./Person"
+
+Registry.register(PersonPage)
 
 export const App = () => {
     return <Entrypoint uri={"http://www.markus-lanthaler.com/"}>

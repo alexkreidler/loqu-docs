@@ -10,6 +10,7 @@ module.exports = {
   organizationName: "alexkreidler", // Usually your GitHub org/user name.
   projectName: "loqu", // Usually your repo name.
   themeConfig: {
+    sidebarCollapsible: false,
     navbar: {
       title: siteName,
       logo: {
