@@ -1,4 +1,5 @@
 const siteName = "Loqu";
+const path = require("path");
 module.exports = {
   title: siteName,
   tagline:
@@ -96,4 +97,5 @@ module.exports = {
       },
     ],
   ],
+  // plugins: [path.resolve(__dirname, "my-svgr")],
 };
