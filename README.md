@@ -1,33 +1,13 @@
-# Website
+<p align="center"><img src="./static/img/logo.svg" width="450"></p>
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+# Loqu
 
-### Installation
+[Loqu](https://github.com/alexkreidler/loqu) is a powerful frontend library for building and using Semantic Web Components. It includes tools for fetching and validating RDF data.
 
-```
-$ yarn
-```
+The Loqu Browser is an interface for data-intensive applications that can be easily extended with custom Semantic Web Components.
 
-### Local Development
+## License
 
-```
-$ yarn start
-```
+Copyright &copy; 2020 Loqu Project Contributors
 
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Distributed under the Apache License
