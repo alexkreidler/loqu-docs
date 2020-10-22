@@ -1,0 +1,44 @@
+---
+title: Backend Server
+---
+
+import Mermaid from "../src/theme/Mermaid";
+
+<div style={{ textAlign: "center" }}>
+  <Mermaid
+    chart={`
+flowchart TB
+subgraph A [Client]
+end
+A -->|Initial request| B & C & D
+subgraph API Layer
+B[HTTP] & C[GraphQL] & D[SPARQL] --> nq[Normalized Query]
+end
+subgraph Core
+nq --> vp[Validation Processor]
+vp --> psub[Pub/Sub Interface]
+end
+subgraph Intermediate Layer
+rval[Response Validation] --> cmpval[Computed Values] --> ser[Serializer]
+end
+psub --> net((Network))
+vp -->|Database-specific requests| db[(Data Store)]
+db -->|Response| rval
+ser -->|Final Output| out
+`}
+  />
+</div>
+
+## Details
+
+### API Frontends
+
+Each API Frontend (HTTP, GraphQL, SPARQL, etc) have configuration options, some which are required.
+
+For example, HTTP requires a mapping from resource URLs to the RDF data model, namely which subjects to query on a `/resource`.
+
+Much of this can be inferred via the Schema Registry.
+
+Additionally, GraphQL requires an optional mapping from GraphQL names to fully qualified IRIs.
+
+### Normalized Query
