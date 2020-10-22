@@ -16,6 +16,10 @@ For me, the semantic web is primarily about these things:
 2. Allowing for incomplete/uncertain data[^1]
 3. (Optionally) Dereferencing the vocabularies behind #1 to provide more information. This is a best practice and is known as Linked Data.
 
+In this article we'll discuss how those principles are useful across data models and technologies.
+
+<!--truncate-->
+
 [^1]:
     The Open World Assumption is part of this, along with less focus on enforcing schemas on types by default (although SHACL fills this void somewhat).
 

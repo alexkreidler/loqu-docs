@@ -1,14 +1,14 @@
-const siteName = "Semantic Web Generic Data Project";
+const siteName = "Loqu";
 module.exports = {
   title: siteName,
   tagline:
-    "A vision for generic backends and frontends, based on Semantic Web, Linked Data, and REST/HATEOAS technologies.",
+    "A powerful frontend library for writing and using Semantic Web Components.",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "alexkreidler", // Usually your GitHub org/user name.
+  projectName: "loqu", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: siteName,
@@ -20,7 +20,7 @@ module.exports = {
         {
           to: "docs/",
           activeBasePath: "docs",
-          label: "Docs",
+          label: "Documentation",
           position: "left",
         },
         { to: "blog", label: "Blog", position: "left" },
@@ -77,17 +77,17 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: "doc1",
+          homePageId: "getting-started",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+          // editUrl:
+          //   "https://github.com/facebook/docusaurus/edit/master/website/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
+          // editUrl:
+          //   "https://github.com/facebook/docusaurus/edit/master/website/blog/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

@@ -1,7 +1,6 @@
 module.exports = {
   someSidebar: {
-    Backend: ["backend"],
-    Docusaurus: ["doc1", "doc2", "doc3"],
-    Features: ["mdx"],
+    "Getting Started": ["getting-started"],
+    "Loqu Browser": ["browser/intro", "browser/data-backends"],
   },
 };
