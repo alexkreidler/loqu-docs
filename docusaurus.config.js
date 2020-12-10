@@ -97,5 +97,5 @@ module.exports = {
       },
     ],
   ],
-  // plugins: [path.resolve(__dirname, "my-svgr")],
+  plugins: [path.resolve(__dirname, "my-fs-empty")],
 };

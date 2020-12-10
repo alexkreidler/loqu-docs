@@ -1,6 +1,6 @@
 {
-  "name": "semantic",
-  "version": "0.0.0",
+  "name": "loqu-docs",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -11,13 +11,19 @@
     "serve": "docusaurus serve"
   },
   "dependencies": {
+    "@emotion/babel-preset-css-prop": "^11.0.0",
+    "@emotion/css": "^11.0.0",
+    "@emotion/react": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
     "@docusaurus/core": "^2.0.0-alpha.60",
     "@docusaurus/preset-classic": "^2.0.0-alpha.60",
     "@mdx-js/react": "^1.5.8",
     "clsx": "^1.1.1",
     "mermaid": "^8.6.4",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "tailwindcss": "^2.0.1",
+    "twin.macro": "^2.0.1"
   },
   "browserslist": {
     "production": [
@@ -30,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "browser": {
+    "fs": false
   }
 }

@@ -26,3 +26,12 @@
 
 /* Text is now stored inside logo as paths */
 /* @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap"); */
+
+dd {
+  margin: 0;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none; /* no underline */
+}
