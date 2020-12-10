@@ -1,20 +1,42 @@
 ---
 title: Getting Started
+slug: /
 ---
 
 To use just the Loqu library in a new application, do the following:
 
 ## Install
 
-```sh
-yarn add @loqu/core @loqu/react
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
+<Tabs
+  defaultValue="yarn"
+  values={[
+    { label: "Yarn", value: "yarn" },
+    { label: "NPM", value: "npm" },
+  ]}
+>
+<TabItem value="yarn">
+
+```sh
+yarn add @loqu/core @loqu/react 
+```
+
+</TabItem>
+<TabItem value="npm">
+
+```
 npm install @loqu/core @loqu/react
 ```
 
+</TabItem>
+</Tabs>
+
+
 ## Write a Semantic Web Component
 
-```tsx
+```js
 // Person.tsx
 import {
   UIContext,
@@ -23,7 +45,7 @@ import {
   FramedForm,
 } from "@loqu/core";
 
-import { linked, Entrypoint } from "@loqu/loqu-react";
+import { Entrypoint } from "@loqu/react";
 import React from "react";
 
 const Spec = {
@@ -75,13 +97,11 @@ export const PersonPage: SemanticComponent<FramedForm<typeof Spec>, unknown> = {
     );
   },
 };
-
-export const LinkedPersonPage = linked(PersonPage);
 ```
 
 ## Use a Semantic Web Component
 
-```tsx
+```js
 // App.tsx
 import { Registry, Entrypoint } from "@loqu/loqu-react";
 
@@ -92,5 +112,4 @@ Registry.register(PersonPage)
 export const App = () => {
     return <Entrypoint uri={"http://www.markus-lanthaler.com/"}>
 }
-
 ```

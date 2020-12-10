@@ -1,5 +1,5 @@
 ---
-id: about-semantic
+# id: about-semantic
 title: What the Semantic Web Means to Me
 author: Alex Kreidler
 author_title: Loqu Core Team

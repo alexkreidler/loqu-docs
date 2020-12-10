@@ -1,5 +1,10 @@
 const siteName = "Loqu";
 const path = require("path");
+const theme = require("prism-react-renderer/themes/github");
+
+console.log("started");
+// console.log(theme);
+
 module.exports = {
   title: siteName,
   tagline:
@@ -11,7 +16,14 @@ module.exports = {
   organizationName: "alexkreidler", // Usually your GitHub org/user name.
   projectName: "loqu", // Usually your repo name.
   themeConfig: {
+    // prism: {
+    //   theme: require("prism-react-renderer/themes/github"),
+    //   darkTheme: require("prism-react-renderer/themes/dracula"),
+    //   // theme: theme,
+    //   // darkTheme: theme, // require("prism-react-renderer/themes/dracula"),
+    // },
     sidebarCollapsible: false,
+
     navbar: {
       title: siteName,
       logo: {
@@ -79,7 +91,7 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: "getting-started",
+          // homePageId: "getting-started",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // editUrl:
