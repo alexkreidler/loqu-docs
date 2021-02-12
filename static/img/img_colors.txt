@@ -1,0 +1,13 @@
+Theme color: #4338ca
+
+Favicon generated here: https://realfavicongenerator.net/
+
+from icon_raw.svg
+
+Add margins and plain background.
+Background color: #ccccff
+
+
+iOS: 
+margin 7px
+background #fff

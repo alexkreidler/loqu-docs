@@ -27,7 +27,7 @@ module.exports = {
     navbar: {
       title: siteName,
       logo: {
-        alt: "My Site Logo",
+        alt: "Loqu Logo",
         src: "img/logo.svg",
       },
       items: [

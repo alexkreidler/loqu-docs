@@ -6,7 +6,7 @@ An Entrypoint is the component that takes the input data, handles any processing
 
 It's the wrapper component that enables Loqu to enrich your components with a variety of features.
 
-It is either `<Dynamic>` from `@loqu-react`, which determines which SWC to render based on selectors, or the `<LinkedComponent>` returned from the `linked(SemanticComponent)` HOC, which always renders the component it was linked from.
+It is either `<Dynamic>` from `@loqu/react`, which determines which SWC to render based on selectors, or the `<LinkedComponent>` returned from the `linked(SemanticComponent)` HOC, which always renders the component it was linked from.
 
 Both versions handle:
 

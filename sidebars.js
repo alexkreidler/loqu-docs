@@ -1,7 +1,12 @@
 module.exports = {
   someSidebar: {
-    "Getting Started": ["getting-started"],
-    "Loqu Library": ["library/component", "library/entrypoints"],
+    Overview: [
+      "overview/getting-started",
+      "overview/component",
+      "overview/entrypoints",
+    ],
+    // Discussion: ["discussion/start"],
+    // "Loqu Library": ["library/component", "library/entrypoints"],
     "Loqu Browser": ["browser/intro", "browser/data-backends"],
   },
 };
