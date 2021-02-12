@@ -12,7 +12,7 @@ module.exports = {
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
-  favicon: "img/favicon.ico",
+  favicon: "icons/favicon.ico",
   organizationName: "alexkreidler", // Usually your GitHub org/user name.
   projectName: "loqu", // Usually your repo name.
   themeConfig: {
